@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     details__modal();
 })
 
-btn.addEventListener('click', ()=>{
+btn.addEventListener('mouseover', ()=>{
     modal__hide.classList.toggle("modal__show");
     modal__footer.classList.toggle("modal__footer__show");
 })
@@ -124,6 +124,7 @@ function product__modal(r){
                 <div class="product__modal__buttons">
                     <button class="add__car__button"  id="${r.id}"> Añadir al Carrito <i class="fa-solid fa-cart-plus"></i></button>
                     <button class="buy__button" id="${r.id}"> Comprar</button>
+                    <button class="exit__button_1 exit__button">x</button>
                 </div>
             </div>
         </div>
